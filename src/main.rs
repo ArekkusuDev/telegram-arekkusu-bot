@@ -97,14 +97,12 @@ async fn get_anime_info(anime_name: String) -> Result<JikanResponse, reqwest::Er
 fn format_message(data: &Datum) -> String {
     let message = format!(r#"Title: *{}*
 English title: *{}*
-Japanese title: *{}*
 
 episodes: *{}*
 Aired: *{}*
 Status: *{}*"#,
         data.title,
         data.title_english,
-        data.title_japanese,
         data.episodes,
         data.aired.string,
         match data.status {

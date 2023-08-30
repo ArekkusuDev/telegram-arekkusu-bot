@@ -25,7 +25,6 @@ pub struct Datum {
     pub images: HashMap<ImageExtension, Image>,
     pub title: String,
     pub title_english: String,
-    pub title_japanese: String,
     pub episodes: i64,
     pub status: Status,
     pub aired: Aired,
